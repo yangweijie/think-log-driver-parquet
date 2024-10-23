@@ -1,0 +1,35 @@
+{
+  "name": "yangweijie/think-log-driver-parquet",
+  "description": "parquet log driver for ThinkPHP6 and ThinkPHP8",
+  "keywords": [
+    "log",
+    "thinkphp",
+    "ThinkPHP",
+    "parquet"
+  ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "yangweijie",
+      "email": "917647288@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "think\\log\\driver\\": "src/"
+    }
+  },
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "flow-php/etl": "^0.10.0",
+    "flow-php/parquet": "1.x-dev",
+    "flow-php/etl-adapter-parquet": "1.x-dev"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
