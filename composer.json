@@ -24,7 +24,19 @@
     "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
     "flow-php/etl": "^0.10.0",
     "flow-php/parquet": "1.x-dev",
-    "flow-php/etl-adapter-parquet": "1.x-dev"
+    "flow-php/etl-adapter-parquet": "1.x-dev",
+    "funkjedi/composer-include-files": "^1.0"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "think\\log\\driver\\LogParquetService"
+      ]
+    }
+  },
+  "scripts": {
+    "post-package-install": "@composer dumpautoload",
+    "post-package-update": "@composer dumpautoload"
   },
   "config": {
     "optimize-autoloader": true,
